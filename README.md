@@ -76,6 +76,7 @@ Update the connection string in appsettings.json.
 Open Package Manager Console and execute:
 
 Add-Migration InitialCreate
+
 Update-Database
 
 ## Run Application
