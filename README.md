@@ -111,4 +111,5 @@ Copy the generated JWT token and authorize using Swagger.
 ## Author
 
 Sathiyaraj V
+
 Senior .NET Developer
