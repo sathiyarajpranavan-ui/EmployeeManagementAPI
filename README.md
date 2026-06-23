@@ -2,12 +2,22 @@
 
 ## Overview
 
-Employee Management API is a RESTful Web API built using ASP.NET Core 8, Entity Framework Core, and SQL Server. The application follows Layered Architecture with Repository Pattern, Dependency Injection, Global Exception Handling, and Input Validation.
+Employee Management API is a RESTful Web API built using ASP.NET Core 8, Entity Framework Core(Code First Approach), and SQL Server. The application follows Layered Architecture with Repository Pattern, Dependency Injection, Global Exception Handling, and Input Validation.
+
+## Project Architecture
+
+→ Controllers
+→ Dtos
+→ Services
+→ Repositories
+→ Entity Framework Core (DbContext)
+→ Models (Entities)
+→ SQL Server
 
 ## Technology Stack
 
 * ASP.NET Core 8 Web API
-* Entity Framework Core
+* Entity Framework Core (Code First Approach)
 * SQL Server
 * Repository Pattern
 * Dependency Injection
@@ -62,6 +72,19 @@ Employee Management API is a RESTful Web API built using ASP.NET Core 8, Entity 
 | PUT    | /api/employee      | Update Employee    |
 | DELETE | /api/employee/{id} | Delete Employee    |
 
+
+## Database Approach
+
+This project follows the Entity Framework Core Code First approach.
+
+Database schema is generated from C# entity classes using Entity Framework Core Migrations.
+
+
+## Workflow
+
+Models → DbContext → Migration → SQL Server Database
+
+
 ## Database Setup
 
 Update the connection string in appsettings.json.
@@ -78,6 +101,7 @@ Open Package Manager Console and execute:
 Add-Migration InitialCreate
 
 Update-Database
+
 
 ## Run Application
 
@@ -99,14 +123,6 @@ Login using:
 Copy the generated JWT token and authorize using Swagger.
 
 
-## Project Architecture
-
-→ Controllers
-→ Dtos
-→ Services
-→ Repositories
-→ Entity Framework Core (DbContext)
-→ SQL Server
 
 
 ## Author
