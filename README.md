@@ -20,10 +20,11 @@
 ## Run
 
 1. Update connection string in appsettings.json
-2. Run migration:
 
-   dotnet ef database update
-
+2. Run Package Manager Console:
+   Add-Migration InitialCreate
+   Update-Database
+   
 3. Run project
 
 4. Open Swagger:
